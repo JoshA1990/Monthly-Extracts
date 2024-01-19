@@ -39,8 +39,8 @@ setwd("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/wf/
 
 #Import in all the functions
 source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Monthly-Extracts/nurse_monthly_functions.R")
-source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Midwife code/midwife_functions.R")
-source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Nursing Associate code/nursing_associate_functions.R")
+source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Midwife code/midwife_monthly_functions.R")
+source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Nursing Associate code/nursing_associate_monthly_functions.R")
 
 
 #Read in the monthly 
