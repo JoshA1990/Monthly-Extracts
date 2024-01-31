@@ -35,7 +35,7 @@ NHS_orgs <- read_csv("Org Codes NHS Digital.csv")
 
 
 #Set the working directory for the ESR files
-setwd("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/wf/Cross-cutting work/Brexit/Nursing/LTP/PMIU work - 2019 elections/Tracking 50k/Joiners_leavers_FTE/Data from ESR/ESR")
+setwd("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/wf/Cross-cutting work/Brexit/Nursing/LTP/PMIU work - 2019 elections/Tracking 50k/ESR Runs/All")
 
 #Import in all the functions
 source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Monthly-Extracts/nurse_monthly_functions.R")
