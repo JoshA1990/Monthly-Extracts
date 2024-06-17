@@ -58,7 +58,7 @@ nursing_associate_stock <- function() {
     arrange(Date,Nationality_grouping)
   
   #Extract csv
-  write.csv(summary, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/",str_replace_all(Sys.Date(),"-",""),"stock.csv"))
+  write.csv(summary, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/NA",str_replace_all(Sys.Date(),"-",""),"stock.csv"))
   
 }
 
@@ -126,7 +126,7 @@ nursing_associate_stock_headcount <- function() {
     arrange(Date,Nationality_grouping)
   
   #Extract csv
-  write.csv(summary, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/",str_replace_all(Sys.Date(),"-",""),"stock headcount.csv"))
+  write.csv(summary, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/NA",str_replace_all(Sys.Date(),"-",""),"stock headcount.csv"))
   
 }
 
@@ -424,7 +424,7 @@ nursing_associate_nationality <- function() {
   ################################### Exports ###################################
   
   #export to shared area with today's date
-  write.csv(pivot_final, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/",str_replace_all(Sys.Date(),"-",""),"joiners_leavers",long_format$Date_from[1],".csv"))
+  write.csv(pivot_final, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/NA",str_replace_all(Sys.Date(),"-",""),"joiners_leavers",long_format$Date_from[1],".csv"))
   
 }
 
@@ -722,6 +722,6 @@ nursing_associate_nationality_headcount <- function() {
   ################################### Exports ###################################
   
   #export to shared area with today's date
-  write.csv(pivot_final, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/",str_replace_all(Sys.Date(),"-",""),"joiners_leavers headcount",long_format$Date_from[1],".csv"))
+  write.csv(pivot_final, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Nursing Associates/NA",str_replace_all(Sys.Date(),"-",""),"joiners_leavers headcount",long_format$Date_from[1],".csv"))
   
 }

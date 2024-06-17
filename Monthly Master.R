@@ -5,26 +5,9 @@
 
 ###################################Install and load the packages###################################
 #(note only need to install packages once, but need to reload library each time)
-#Working with strings package
-#install.packages ("stringr")
-library(stringr)
-
-#data wrangling/ analysis package
-library(dplyr)
-
-#Viewing data package
-library(kableExtra) 
-
 #data wrangling/ analysis package
 library(tidyverse)
 
-library(lubridate)
-
-#Dates package
-library(eeptools)
-
-#visualisation
-library(ggplot2)
 
 #Set the working director for the Nationality and Org Code files.
 setwd("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data")
@@ -39,13 +22,13 @@ setwd("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/wf/
 
 #Import in all the functions
 source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Monthly-Extracts/nurse_monthly_functions.R")
-source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Midwife code/midwife_monthly_functions.R")
-source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Nursing Associate code/nursing_associate_monthly_functions.R")
+source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Monthly-Extracts/midwife_monthly_functions.R")
+source("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Documents/R Codes/Monthly-Extracts/nurse_associate_monthly_functions.R")
 
 
 #Read in the monthly 
-Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202310 extracted Dec 23.csv")
-Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202311 extracted Jan 24.csv")
+Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202403 extracted May 24.csv")
+Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202404 extracted Jun 24.csv")
 
 #Call monthly set of nurse runs
 nurse_stock()
@@ -67,8 +50,8 @@ nursing_associate_stock_headcount()
 nursing_associate_nationality()
 
 #Read in the yearly 
-Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202211 extracted Jan 23.csv")
-Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202311 extracted Jan 24.csv")
+Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202304 extracted Jun 23.csv")
+Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202404 extracted Jun 24.csv")
 
 #Call yearly set of nurse runs
 nurse_nationality()
@@ -82,8 +65,8 @@ nursing_associate_nationality()
 
 
 #Read in cumulative
-Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202303 extracted May 23.csv")
-Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202311 extracted Jan 24.csv")
+Raw_Data_y1 <- read_csv("Staff in Post - Workforce 202403 extracted May 24.csv")
+Raw_Data_y2 <- read_csv("Staff in Post - Workforce 202404 extracted Jun 24.csv")
 
 #Call cumulative set of nurse runs
 nurse_nationality_cumulative()

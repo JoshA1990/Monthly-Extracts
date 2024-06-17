@@ -1016,6 +1016,6 @@ midwife_trust <- function() {
     select(1,2,5,3,4,6)
   
   #export to shared area with today's date
-  write.csv(long_format, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/",str_replace_all(Sys.Date(),"-",""),"midwife_joiners_leavers_trust",long_format$Date_from[1],".csv"))
+  write.csv(long_format, paste("C:/Users/Josh.Andrews/OneDrive - Department of Health and Social Care/Nurse Data/Outputs/Midwives/Midwife",str_replace_all(Sys.Date(),"-",""),"midwife_joiners_leavers_trust",long_format$Date_from[1],".csv"))
   
 }
